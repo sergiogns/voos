@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Voos SP → Flórida</title><style>body{margin:0;background:#1a1a19;color:#9c9b95;font:14px -apple-system,system-ui,sans-serif;display:grid;place-items:center;height:100vh}</style></head>
+<body>Carregando…
+<script>
+fetch("app.html?t=" + Date.now(), {cache: "no-store"})
+  .then(r => { if (!r.ok) throw r.status; return r.text(); })
+  .then(h => { document.open(); document.write(h); document.close(); })
+  .catch(() => location.replace("app.html"));
+</script>
+<noscript><a href="app.html">Abrir</a></noscript>
+</body></html>
